@@ -7,6 +7,7 @@ import Home from './Home'
 import ImageZoomDesc from './pages/ImageZoomDesc'
 import AnimatingTriangles from './pages/AnimatingTriangles'
 import ComputerCanvas from './pages/PcModel'
+import Matilda from './pages/Matilda'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/imagezoomdesc' element={<ImageZoomDesc />} />
         <Route path='/triangles' element={<AnimatingTriangles />} />
         <Route path='/3dpc' element={<ComputerCanvas />} />
+        <Route path='/matilda' element={<Matilda />} />
       </Routes>
     </>
   )
