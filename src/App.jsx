@@ -5,16 +5,20 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import ImageZoomDesc from './pages/ImageZoomDesc'
+import AnimatingTriangles from './pages/AnimatingTriangles'
+import ComputerCanvas from './pages/PcModel'
 
 function App() {
 
   return (
-   <>
-   <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/imagezoomdesc' element={<ImageZoomDesc/>}/>
-   </Routes>
-   </>
+    <>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/imagezoomdesc' element={<ImageZoomDesc />} />
+        <Route path='/triangles' element={<AnimatingTriangles />} />
+        <Route path='/3dpc' element={<ComputerCanvas />} />
+      </Routes>
+    </>
   )
 }
 
